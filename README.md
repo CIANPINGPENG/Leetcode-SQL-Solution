@@ -3,6 +3,8 @@
 
 <a href="https://leetcode.com/problems/calculate-special-bonus/description/?envType=study-plan&id=sql-i"> 1873. Calculate Special Bonus <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/1873.%20Calculate%20Special%20Bonus"> Solution <a>  
 <a href="https://leetcode.com/problems/big-countries/description/?envType=study-plan&id=sql-i"> 1757. Recyclable and Low Fat Products <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/595.%20Big%20Countries"> Solution <a>  
+<a href="https://leetcode.com/problems/daily-leads-and-partners/description/?envType=study-plan&id=sql-i"> 1693. Daily Leads and Partners <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/1693.%20Daily%20Leads%20and%20Partners"> Solution <a>  
+
 <a href="https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/description/?envType=study-plan&id=sql-i"> 1581. Customer Who Visited but Did Not Make Any Transactions <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/1581.%20Customer%20Who%20Visited%20but%20Did%20Not%20Make%20Any%20Transactions"> Solution <a>
 
 <a href="https://leetcode.com/problems/patients-with-a-condition/description/?envType=study-plan&id=sql-i"> 1527. Patients With a Condition <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/1527.%20Patients%20With%20a%20Condition"> Solution <a>  
