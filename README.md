@@ -14,6 +14,8 @@ TRIED HALF
 
 <a href="https://leetcode.com/problems/patients-with-a-condition/description/?envType=study-plan&id=sql-i"> 1527. Patients With a Condition <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/1527.%20Patients%20With%20a%20Condition"> Solution <a>  
 <a href="https://leetcode.com/problems/top-travellers/description/?envType=study-plan&id=sql-i"> 1407. Top Travellers <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/1407.%20Top%20Travellers"> Solution <a>  
+<a href="https://leetcode.com/problems/market-analysis-i/description/?envType=study-plan&id=sql-i"> 1158. Market Analysis I <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/1158.%20Market%20Analysis%20I"> Solution <a>  
+
 <a href="https://leetcode.com/problems/article-views-i/description/?envType=study-plan&id=sql-i"> 1148. Article Views I <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/1148.%20Article%20Views%20I"> Solution <a>
  
 <a href="https://leetcode.com/problems/user-activity-for-the-past-30-days-i/description/?envType=study-plan&id=sql-i"> 1141. User Activity for the Past 30 Days I <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/1141.%20User%20Activity%20for%20the%20Past%2030%20Days%20I"> Solution <a>
