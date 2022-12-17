@@ -19,6 +19,7 @@ TRIED HALF
 <a href="https://leetcode.com/problems/article-views-i/description/?envType=study-plan&id=sql-i"> 1148. Article Views I <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/1148.%20Article%20Views%20I"> Solution <a>
  
 <a href="https://leetcode.com/problems/user-activity-for-the-past-30-days-i/description/?envType=study-plan&id=sql-i"> 1141. User Activity for the Past 30 Days I <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/1141.%20User%20Activity%20for%20the%20Past%2030%20Days%20I"> Solution <a>
+ 
 <a href="https://leetcode.com/problems/actors-and-directors-who-cooperated-at-least-three-times/description/"> 1050. Actors and Directors Who Cooperated At Least Three Times <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/1050.%20Actors%20and%20Directors%20Who%20Cooperated%20At%20Least%20Three%20Times"> Solution <a>
 <a href="https://leetcode.com/problems/sales-person/description/?envType=study-plan&id=sql-i"> 607. Sales Person <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/607.%20Sales%20Person"> Solution <a>
 
