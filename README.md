@@ -30,6 +30,7 @@ TRIED HALF
 
 <a href="https://leetcode.com/problems/big-countries/description/?envType=study-plan&id=sql-i"> 595. Big Countries <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/595.%20Big%20Countries"> Solution <a>  
 <a href="https://leetcode.com/problems/customer-placing-the-largest-number-of-orders/description/"> 586. Customer Placing the Largest Number of Orders <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/586.%20Customer%20Placing%20the%20Largest%20Number%20of%20Orders"> Solution <a> 
+ 
 <a href="https://leetcode.com/problems/find-customer-referee/description/"> 584. Find Customer Referee <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/584.%20Find%20Customer%20Referee"> Solution <a>  
 <a href="https://leetcode.com/problems/game-play-analysis-i/description/?envType=study-plan&id=sql-i"> 511. Game Play Analysis I <a>   <a href="https://leetcode.com/problems/game-play-analysis-i/description/?envType=study-plan&id=sql-i"> Solution <a>  
 <a href="https://leetcode.com/problems/customers-who-never-order/description/?envType=study-plan&id=sql-i"> 183. Customers Who Never Order <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/183.%20Customers%20Who%20Never%20Order"> Solution <a>  
