@@ -1,6 +1,4 @@
-# Leetcode-SQL-Solution
-
-$${\color{lightgreen}Light \space Green}$$
+$${\color{Leetcode-SQL-Solution}Green}$$
 
 TRIED HALF
 * <a href="https://leetcode.com/problems/capital-gainloss/description/?envType=study-plan&id=sql-i"> 1393. Capital Gain/Loss <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/1393.%20Capital%20Gain%20%26%20Loss"> Solution <a>  
