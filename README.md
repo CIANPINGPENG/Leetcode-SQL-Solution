@@ -3,7 +3,7 @@
 TRIED HALF
 * <a href="https://leetcode.com/problems/capital-gainloss/description/?envType=study-plan&id=sql-i"> 1393. Capital Gain/Loss <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/1393.%20Capital%20Gain%20%26%20Loss"> Solution <a>  
 
-- [x]<a href="https://leetcode.com/problems/the-latest-login-in-2020/description/?envType=study-plan&id=sql-i"> **1890. The Latest Login in 2020** <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/1890.%20The%20Latest%20Login%20in%202020"> Solution <a>  
+- [x] <a href="https://leetcode.com/problems/the-latest-login-in-2020/description/?envType=study-plan&id=sql-i"> **1890. The Latest Login in 2020** <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/1890.%20The%20Latest%20Login%20in%202020"> Solution <a>  
 <a href="https://leetcode.com/problems/calculate-special-bonus/description/?envType=study-plan&id=sql-i"> **1873. Calculate Special Bonus** <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/1873.%20Calculate%20Special%20Bonus"> Solution <a>  
 <a href="https://leetcode.com/problems/big-countries/description/?envType=study-plan&id=sql-i"> **1757. Recyclable and Low Fat Products** <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/595.%20Big%20Countries"> Solution <a>  
 <a href="https://leetcode.com/problems/find-total-time-spent-by-each-employee/description/?envType=study-plan&id=sql-i"> **1741. Find Total Time Spent by Each Employee** <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/1741.%20Find%20Total%20Time%20Spent%20by%20Each%20Employee"> Solution <a>  
