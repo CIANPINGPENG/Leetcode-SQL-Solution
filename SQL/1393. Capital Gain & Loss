@@ -1,3 +1,5 @@
+#Option 1
+
 WITH BUY AS (
 SELECT stock_name, operation, operation_day, SUM(price) AS Buy_price
 FROM Stocks
@@ -15,3 +17,12 @@ SELECT BUY.stock_name, (Sell_price-Buy_price) AS capital_gain_loss
 FROM BUY
 JOIN SELL
 ON BUY.stock_name=SELL.stock_name
+
+#Option 2
+
+SELECT stock_name, SUM(
+    CASE WHEN operation = 'Buy' THEN - price 
+    ELSE price END
+) AS capital_gain_loss
+FROM Stocks
+GROUP BY stock_name
