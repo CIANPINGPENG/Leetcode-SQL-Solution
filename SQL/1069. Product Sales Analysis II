@@ -1,0 +1,14 @@
+**Intuition:
+The intuition is to calculate the total quantity sold for a product.
+
+**Algorithm:
+Because the columns I needed, product_id and quantity, are in the Sales table,
+it is not necessary for me to combine two tables.
+Therefore, I used GROUP BY and SUM to sum up the quantity based on the product_id.
+Then, I selected the two columns I needed, product_id and total_quantity.
+
+```
+SELECT product_id, SUM(quantity) AS total_quantity 
+FROM Sales
+GROUP BY product_id
+```
