@@ -1,0 +1,14 @@
+**Intuition:
+The intuition is to combine two tables and select the columns I want.
+
+**Algorithm:
+Because I didn't want the data which could't match,
+I used INNER JOIN to make two tables as one based on product_id.
+Then, I selected the three columns I needed, product_name, year, price
+
+```
+SELECT P.product_name, S.year, S.price
+FROM Sales S
+INNER JOIN Product P
+    ON S.product_id = P.product_id
+```
