@@ -1,0 +1,15 @@
+**Intuition:
+The intuition is to combine two tables and calculate the average of experience years for a project.
+
+**Algorithm:
+I merged Project table and Employee table by INNER JOIN based on employee_id because I didn't need to consider these two tables didn't match with each other.
+Then, I used AVG to calculate the average of experience years based on projects.
+After calculation, I selected the two columns I needed, product_id and average_years.
+
+```
+SELECT P.project_id, ROUND(AVG(E.experience_years),2) AS average_years
+FROM Project P
+INNER JOIN Employee E
+    ON P.employee_id = E.employee_id
+GROUP BY P.project_id
+```
