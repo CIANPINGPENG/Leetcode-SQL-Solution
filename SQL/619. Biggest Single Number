@@ -1,0 +1,21 @@
+**Intuition:
+The intuition is to calculate how many times a number shows up.
+Then, we filter out the number of occurences more than once.
+After filtering, we select the biggest one.
+
+**Algorithm:
+I used COUNT to calculate a number's occurence times.
+Then I used subquery to filter out numbers from appearing just one time by WHERE.
+After that, I used MAX to select the biggest one.
+
+```
+SELECT MAX(num) AS num
+FROM (
+    SELECT num, COUNT(num) AS CountNum
+    FROM MyNumbers
+    GROUP BY num
+    ) M1
+WHERE CountNum = 1
+```
+**Improvement:
+Use HAVING to filter out the occurence more than once in the subquery
