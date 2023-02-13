@@ -1,0 +1,31 @@
+**Intuition:
+The intuition is to filter out the buyers who buy S8 from those people who buy S8 and iPhone.
+
+**Algorithm:
+Because the product_id is not always the same, like S8's product_id is 1 this time, but it may change to 2 next time,
+I used INNER JOIN to make two tables as one based on product_id.
+Then, I filtered out the customers by product_name.
+
+First, I used WHERE to filter out the customers who buy S8
+In the subquery, I filtered the customers who buy iPhone.
+Second, I used NOT IN to filter out those people who buy S8 but don't buy iphone by subquery. 
+Then, I used DISTINCT to avoid repititive buyer_id
+
+```
+SELECT DISTINCT buyer_id
+FROM Sales S
+INNER JOIN Product P
+    ON S.product_id = P.product_id
+WHERE 
+    P.product_name = 'S8' AND 
+    S.buyer_id NOT IN (
+        SELECT S.buyer_id
+        FROM Sales S
+        INNER JOIN Product P
+            ON S.product_id = P.product_id
+        WHERE P.product_name = 'iPhone'
+        ) 
+```
+
+**Improvement:
+Use no subquery to complete the request
