@@ -1,0 +1,18 @@
+**Intuition:
+The intuition is to find out how to filter the data and calculate the total posts.
+
+**Algorithm:
+Based on the request, I filtered that the action is report and the date is 2019/7/4.
+Also, I used DISTINCT to avoid repetitive post_id as a subquery.
+Then, I counted the total posts based on report_reason.
+After calculation, I selected two columns I needed, report_reason and report_count
+
+```
+SELECT report_reason, COUNT(report_reason) AS report_count
+FROM (
+    SELECT DISTINCT extra AS report_reason, post_id
+    FROM Actions
+    WHERE action = 'report' AND action_date = '2019-07-04'
+    ) A
+GROUP BY report_reason
+```
