@@ -16,3 +16,6 @@ FROM (
     ) A
 GROUP BY report_reason
 ```
+
+**Improvement:
+Use no subquery to simplify the code
