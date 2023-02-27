@@ -1,0 +1,22 @@
+**Intuition:
+The intuition is to combine two tables and use CASE statment to identify the weather type.
+
+**Algorithm:
+To solve this problem, we need to inner join the Countries and Weather tables using the country_id column.
+Then, I filtered the data which is not in November 2019.
+After that, I grouped the results by country_id to calculate the average weather_state for each country.
+I used CASE statement to determine the type of weather based on the average weather state.
+Finally, the result showed two columns, country_name and weather_type.
+
+```
+SELECT 
+    C.country_name, 
+    CASE WHEN AVG(W.weather_state) <= 15 THEN 'Cold'
+         WHEN AVG(W.weather_state) >= 25 THEN 'Hot' 
+         ELSE 'Warm' END AS weather_type
+FROM Countries C
+INNER JOIN Weather W
+    ON C.country_id = W.country_id
+WHERE MONTH(W.day) = 11
+GROUP BY W.country_id
+```
