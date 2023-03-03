@@ -1,4 +1,4 @@
-**$${\color{blue}Leetcode-SQL-Solution}$$**
+**$${Leetcode-SQL-Solution}$$**
 
 - [ ] <a href="https://leetcode.com/problems/employees-with-missing-information/description/?envType=study-plan&id=sql-i"> **1965. Employees With Missing Information** <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/1965.%20Employees%20With%20Missing%20Information"> Solution <a>  ```Fourth time```  
 - [x] <a href="https://leetcode.com/problems/the-latest-login-in-2020/description/?envType=study-plan&id=sql-i"> **1890. The Latest Login in 2020** <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/1890.%20The%20Latest%20Login%20in%202020"> Solution <a>  
