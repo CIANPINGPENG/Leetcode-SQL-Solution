@@ -1,0 +1,20 @@
+**Intuition:
+The intuition is to merge two tables by inner join and filter the data which meets the requirement.
+
+**Algorithm:
+Based on the request, I joined Products and Orders tables on the product_id column.
+The condition for the join is that the product must have been ordered in February 2020.
+So, I used WHERE function to filter that the order_date is between 2020/2/1 and 2020/2/29.
+To get the total units ordered for each product, I used GROUP BY the product_id and SUM the unit column.
+Then, I filtered the results by the SUM of units being greater than or equal to 100.
+After that, I selected two columns I needed, product_name and the SUM of units.
+
+```
+SELECT Products.product_name, SUM(Orders.unit) AS unit
+FROM Products
+INNER JOIN Orders
+    ON Products.product_id = Orders.product_id
+WHERE Orders.order_date BETWEEN '2020-02-01' AND '2020-02-29'
+GROUP BY Orders.product_id
+HAVING SUM(Orders.unit) >= 100
+```
