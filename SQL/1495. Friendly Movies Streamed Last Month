@@ -1,0 +1,20 @@
+**Intuition:
+The intuition is to combine two tables and filter the data I want.
+
+**Algorithm:
+Because I didn't want the data which could't match,
+I used INNER JOIN to make two tables as one based on content_id.
+Based on the problem requirement, I filtered the data which program_date was in Jun 2020, content_type is Movies and Kids_content is Yes.
+Then, I selected the title columns and use the DISTINCT funtion to ensure that each title is only listed once in the result set.
+
+```
+SELECT DISTINCT title
+FROM Content C
+INNER JOIN TVProgram T
+    ON C.content_id  = T.content_id 
+WHERE 
+    YEAR(T.program_date) = 2020 AND
+    MONTH(T.program_date) = 6 AND
+    C.content_type = 'Movies' AND
+    C.Kids_content = 'Y'
+```
