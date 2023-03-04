@@ -1,0 +1,16 @@
+**Intuition:
+The intuition is to filter employees whose department doesn't in the table.
+
+**Algorithm:
+To simplify the solution, I used subquery instead of joining table.
+I used the Students table and filter the result set to include only the rows where the deparment_id value didn't show up in the Departments table.
+Then, I selected the two columns I needed, id and name from Students table
+
+```
+SELECT id, name
+FROM Students
+WHERE department_id NOT IN (
+    SELECT id
+    FROM Departments
+)
+```
