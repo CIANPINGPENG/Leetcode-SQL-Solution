@@ -1,0 +1,14 @@
+**Intuition:
+The intuition is to combine two tables and select the columns I want.
+
+**Algorithm:
+Because I wanted to keep all names from Employees table, 
+I used LEFT JOIN to make two tables as one based on id.
+Then, I selected the two columns I needed, unique_id and name.
+
+```
+SELECT unique_id, name
+FROM Employees E
+LEFT JOIN EmployeeUNI U
+    ON E.id = U.id
+```
