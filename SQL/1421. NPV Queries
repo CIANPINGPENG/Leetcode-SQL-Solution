@@ -1,0 +1,17 @@
+**Intuition:
+The intuition is to combine two tables and select the columns I want.
+
+**Algorithm:
+Because I wanted to keep all the data from Queries,
+I used LEFT JOIN to make two tables as one based on id and year.
+Then, I selected the three columns I needed, id, year, and npv.
+Because I would like the data to show 0 rather than NULL if the id and year from NPV doesn't match Queries table, 
+I used IFNULL function if the data is NULL, it shows 0.
+I also can use COALESCE funtion to achieve my goal.
+
+```
+SELECT Q.id, Q.year, IFNULL(N.npv, 0) AS npv
+FROM Queries Q
+LEFT JOIN NPV N
+    ON Q.id = N.id AND Q.year = N.year
+```
