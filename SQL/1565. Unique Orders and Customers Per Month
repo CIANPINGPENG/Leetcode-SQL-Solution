@@ -1,0 +1,21 @@
+**Intuition:
+The intuition is to select data from the Orders table, which includes information about orders made by customers, such as the order date and customer ID.
+The query groups the data by month and calculate the number of orders and the number of unique customers who made those orders.
+
+**Algorithm:
+I selected three columns from the Orders table.
+I formatted the order_data column to only show the year and month in number, and renamed it to month.
+The COUNT function is used to calculate the total number of orders for each month, and the number of unique customers who made those orders.
+I used WHERE clause filters out orders where the invoice is less than or equal to $20.
+The GROUP BY clause groups the data by month, so that the counts are aggregated for each unique month.
+Then, the final result is a table that shows the month, the number of orders made in that month, and the number of unique customers who made those orders.
+
+```
+SELECT 
+    DATE_FORMAT(order_date,'%Y-%m') AS month, 
+    COUNT(customer_id) AS order_count, 
+    COUNT(DISTINCT customer_id) AS customer_count
+FROM Orders
+WHERE invoice > 20
+GROUP BY month
+```
