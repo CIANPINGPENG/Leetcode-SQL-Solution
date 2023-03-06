@@ -1,0 +1,20 @@
+**Intuition:
+The intuition is to calculate the total volume of products stored in each warehouse by merging two tables.
+
+**Algorithm:
+I started by selecting the name of the warehouse from Warehouse table, and renamed it as warehouse_name.
+Also, I mutiplied the dimensions of the product from the Products table by the number of units of that product from the Warehouse table.
+Then, the volumes of all products stored in each warehouse are summed up to get the total volume of products in the warehouse, and renamed it as volume.
+I used INNER JOIN to combine two tables because I ignored the information which didn't exist in two tables.
+The GROUP BY clause groups the warehouse's name, so that the SUM was aggregated for each unique warehouse.
+Then, the final result is a table that shows the warehouse's name and volume.
+
+```
+SELECT 
+    W.name AS warehouse_name, 
+    SUM(P.Width*P.Length*P.Height*W.units) AS volume
+FROM Warehouse W
+INNER JOIN Products P
+    ON W.product_id = P.product_id
+GROUP BY W.name
+```
