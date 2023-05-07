@@ -1,0 +1,19 @@
+**Intuition:
+The intuition is to retrieve the name of all sellers who did not have any orders in 2020.
+
+**Algorithm:
+A subquery is executed to find all seller IDs that have orders in 2020.
+This is achieved by selecting the seller IDs from the Orders table where the sale date has a year equal to 2020.
+The outer query retrieves the names of all sellers whose IDs are not included in the result of the subquery.
+This is achieved by selecting the seller names from the Seller table where the seller ID is not present in the subquery result by NOT IN operator.
+The ORDER BY clause at the end is used to sort the result set in ascending order by the seller name.
+
+```
+SELECT seller_name
+FROM Seller
+WHERE seller_id NOT IN(
+    SELECT seller_id
+    FROM Orders
+    WHERE YEAR(sale_date) = 2020)
+ORDER BY seller_name
+```
