@@ -1,0 +1,23 @@
+**Intuition:
+The intuition is to combine two tables and to display the name of the product, along with the total amount of rest, paid, canceled, and refunded invoices associated with each product.
+
+**Algorithm:
+1. Strat by selceting the "name" column from the "Product" table.
+2. Use the RIGHT JOIN clause to combine the "Invoice" table with the "Product" table based on the product_id column.
+3. Use the GROUP BY clause groups the result by the product name to aggregrate the total rest, paid, canceled, and refunded amounts for each product.
+4. Select the columns we want to display and use the IFNULL function to handle NULL values and replace them with 0.
+5. Use the ORDER BY clause to sort the result set in ascending order based on the product name.
+
+```
+SELECT 
+  B.name, 
+  IFNULL(SUM(A.rest),0) AS rest, 
+  IFNULL(SUM(A.paid),0) AS paid, 
+  IFNULL(SUM(A.canceled),0) AS canceled, 
+  IFNULL(SUM(A.refunded),0) AS refunded
+FROM Invoice A
+RIGHT JOIN Product B
+  ON A.product_id = B.product_id
+GROUP BY B.name
+ORDER BY B.name
+```
