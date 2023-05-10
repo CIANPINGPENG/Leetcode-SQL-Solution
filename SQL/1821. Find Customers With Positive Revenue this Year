@@ -1,0 +1,14 @@
+**Intuition:
+The intuition is to search for all customer IDs whose revenue in the year 2021 is greater than 0.
+
+**Algorithm:
+1. Select the customer_id column to retrieve
+2. Use WHERE statement to specify the conditions for filtering the data, which is year 2021 and positive revenue
+
+```
+SELECT customer_id
+FROM Customers
+WHERE 
+  year = 2021 AND 
+  revenue > 0
+```
