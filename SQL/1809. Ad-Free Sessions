@@ -1,0 +1,18 @@
+**Intuition:
+The intuition is to find all distinct session IDs that did not have any ads played during their playback period.
+
+**Algorithm:
+1. Select all distinct session IDs from the playback table where the session ID is not in the subquery.
+2. The subquery selects session IDs from the playback table that have a corresponding customer ID in the Ads table, where the ad was played during the sessions's playback period.
+
+```
+SELECT DISTINCT session_id
+FROM Playback 
+WHERE session_id NOT IN(
+    SELECT A.session_id
+    FROM Playback A
+    INNER JOIN Ads B
+        ON A.customer_id = B.customer_id
+    WHERE B.timestamp BETWEEN A.start_time AND A.end_time
+)
+```
