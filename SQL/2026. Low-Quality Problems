@@ -1,0 +1,14 @@
+**Intuition:
+The intuition is to retrieve the problem IDs where the ratio of likes to the total number of votes is less than 0.6.
+
+**Algorithm:
+1. Select the problem_id column from the Problems table.
+2. Filter the rows based on the condition that the ratio of likes to the total number of votes is less than 0.6.
+3. Arrange the problem_id column in ascending order.
+
+```
+SELECT problem_id
+FROM Problems
+WHERE likes / (likes+dislikes) < 0.6
+ORDER BY problem_id
+```
