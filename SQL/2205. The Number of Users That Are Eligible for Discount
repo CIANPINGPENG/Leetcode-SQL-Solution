@@ -1,0 +1,20 @@
+**Intuition:
+The intuition is to return the count of distinct user IDs from the "Purchase" table satisfying "time_stamp" and "anount" conditions.
+
+**Algorithm:
+1. Select the count of distinct user IDs from the "Purchase" table.
+2. Use the "Between" operator to check if the "time_stamp" is within the given data range, and the amount is larger than the minAmount.
+
+```
+CREATE FUNCTION getUserIDs(startDate DATE, endDate DATE, minAmount INT) RETURNS INT
+BEGIN
+  RETURN (
+      # Write your MySQL query statement below.
+      SELECT COUNT(DISTINCT(user_id))
+      FROM Purchases
+      WHERE 
+        time_stamp BETWEEN startDate AND endDate AND 
+        amount >= minAmount
+  );
+END
+```
