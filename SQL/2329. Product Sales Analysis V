@@ -1,0 +1,18 @@
+**Intuition:
+The intuition is to retrieve the total spending of each user in the sales data.
+So, I need to join the Sales table with the Product table and then group the results by user_id.
+
+**Algorithm:
+1. Select user IDs and calculate the sum of the product of quantity and price.
+2. Perform an inner join on the product_id column to match the sales data with the corresponding product information.
+3. Group the data by user_id.
+3. Order the results in descending order based on the total spending.
+
+```
+SELECT A.user_id, SUM(A.quantity*B.price) AS spending
+FROM Sales A
+INNER JOIN Product B
+    ON A.product_id = B.product_id 
+GROUP BY A.user_id
+ORDER BY spending DESC
+```
