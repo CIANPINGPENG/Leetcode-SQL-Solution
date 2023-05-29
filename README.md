@@ -1,5 +1,6 @@
 **$${Leetcode-SQL-Solution}$$**
 
+- [x] <a href="https://leetcode.com/problems/the-number-of-users-that-are-eligible-for-discount/description/"> **2205. The Number of Users That Are Eligible for Discount** <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/2205.%20The%20Number%20of%20Users%20That%20Are%20Eligible%20for%20Discount"> Solution <a>  
 - [x] <a href="https://leetcode.com/problems/low-quality-problems/description/"> **2026. Low-Quality Problems** <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/2026.%20Low-Quality%20Problems"> Solution <a>  
 - [ ] <a href="https://leetcode.com/problems/employees-with-missing-information/description/?envType=study-plan&id=sql-i"> **1965. Employees With Missing Information** <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/1965.%20Employees%20With%20Missing%20Information"> Solution <a>  ```Fourth time```  
 - [x] <a href="https://leetcode.com/problems/the-latest-login-in-2020/description/?envType=study-plan&id=sql-i"> **1890. The Latest Login in 2020** <a>   <a href="https://github.com/CIANPINGPENG/Leetcode-SQL-Solution/blob/main/SQL/1890.%20The%20Latest%20Login%20in%202020"> Solution <a>  
