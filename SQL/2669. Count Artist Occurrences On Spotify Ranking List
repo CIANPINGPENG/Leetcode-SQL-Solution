@@ -1,0 +1,15 @@
+**Intuition:
+The intuition is to select distinct artists from the Spotify table and counts the number of occurrences of each artist.
+
+**Algorithm:
+1. Select distinct artist names from the Spotify table.
+2. Count the occurrences of each artist using the COUNT function and alias it as "occurrences".
+3. Group the results by the artist.
+4. Order the results first by the occurrences in descending order and then by artist name in ascending order.
+
+```
+SELECT DISTINCT artist, COUNT(artist) AS occurrences
+FROM Spotify
+GROUP BY artist
+ORDER BY occurrences DESC, artist 
+```
