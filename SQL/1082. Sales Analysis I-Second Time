@@ -1,0 +1,20 @@
+**Intuition:
+The intuition is to select distinct sellers from the sales table with the highest total sum of prices.
+
+**Algorithm:
+1. Select sellers from the Sales table.
+2. Group the results by sellers.
+3. Filter the grouped data and select only those rows where the sum of prices is equal to the sum of prices obtained from the subquery, which shows only the top row with the highest total sum of prices
+
+```
+SELECT seller_id
+FROM Sales
+GROUP BY seller_id
+HAVING SUM(price) = (
+  SELECT SUM(price)
+  FROM Sales
+  GROUP BY seller_id
+  ORDER BY SUM(price) DESC
+  LIMIT 1
+  )
+```
