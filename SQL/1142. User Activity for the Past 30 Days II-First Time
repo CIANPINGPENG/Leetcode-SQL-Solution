@@ -1,0 +1,17 @@
+**Intuition:
+The intuition is to calculate the average number of sessions per user within a specified date range.
+
+**Algorithm:
+1. The inner query selects all rows from the Activity table that fall within the date range.
+2. The inner query then groups the rows by user_id and session_id, ensuring that each unique combination is considered as a distinct session for a user.
+3. The outer query calculates the average sessions per user and round to two decimal places.
+
+```
+SELECT IFNULL(ROUND(COUNT(session_id) / COUNT(DISTINCT user_id),2),0) AS average_sessions_per_user
+FROM (
+  SELECT *
+  FROM Activity
+  WHERE activity_date BETWEEN "2019-06-28" AND "2019-07-27"
+  GROUP BY user_id, session_id
+  ) A
+```
