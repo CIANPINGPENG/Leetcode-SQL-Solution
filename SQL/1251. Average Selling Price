@@ -1,0 +1,20 @@
+**Intuition:
+The intuition is to calculate the average price of each product based on the prices and units sold.
+
+**Algorithm:
+1. Perform an inner join between the Prices table and the UnitsSold table on the product ID, matching the purchase date between the start date and end date.
+2. Group the results by the product ID.
+3. Calculate the sum of price multiple by units for each product ID and the sum of units for each product ID.
+   Then, get the average price.
+4. Round the average price to two decimal places. 
+
+```
+SELECT 
+  A.product_id AS product_id, 
+  ROUND(SUM(A.price*B.units)/SUM(B.units),2) AS average_price
+FROM Prices A
+INNER JOIN UnitsSold B
+    ON A.product_id = B.product_id AND 
+       B.purchase_date BETWEEN A.start_date AND A.end_date
+GROUP BY A.product_id
+```
