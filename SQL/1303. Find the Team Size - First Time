@@ -1,0 +1,23 @@
+**Intuition:
+The intuition is to retrieve the employee IDs and the corresponding team sizes for each employee.
+
+**Algorithm:
+1. Retrieve all records from the Employee data.
+2. Perform a left join with the derived table.
+3. In the subquery, group the records by team ID and calculate the team size using the COUNT function.
+4. Match the team IDs in the main table with the team IDs in the subquery to associate each employee with their respective team size.
+5. Select the employee IDand team size from the result.
+
+```
+SELECT A.employee_id, B.team_size
+FROM Employee A
+LEFT JOIN 
+  (SELECT employee_id, team_id, COUNT(employee_id) AS team_size
+  FROM Employee
+  GROUP BY team_id
+  ) B
+  ON A.team_id = B.team_id
+```
+
+**Improvement:
+Partitioning the data could improve the query's performance.
