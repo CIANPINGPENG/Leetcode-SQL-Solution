@@ -1,0 +1,18 @@
+**Intuition:
+The intuition is to calculate the ratio of the number of clicks to the number of views for each ad and express it as a percentage.
+
+**Algorithm:
+1. Retrieve the ad_id
+2. Calculate the the number of rows where the action is "Clicked" and divide it by the number of rows where the action is either "Clicked" or "Viewed".
+3. Multiple the result by 100 and round it to two decimal places.
+4. If the division results in a NULL value, set the CTR to 0 using IFNULL.
+5. Group the results by ad_id.
+6. Sort the results in descending order first by CTR and then by ad_id.
+
+```
+SELECT ad_id, 
+    IFNULL(ROUND((SUM(action="Clicked")/SUM(action="Clicked" OR action="Viewed"))*100,2),0) AS ctr
+FROM Ads
+GROUP BY ad_id
+ORDER BY ctr DESC, ad_id
+```
