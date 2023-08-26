@@ -1,0 +1,31 @@
+**Intuition:
+The intuition is to calculate the total price based on sellers.
+Then, we can select the sellers with highest total price.
+
+**Algorithm:
+First, I created a table, named Total_Price to SUM the price based on seller_id.
+Also, I used ORDER BY to sort the total price from the highest to the lowest.
+Then, I created another subquery and used MAX to select the highest total price from Total_Price table.
+After that, I summed up the price again based on sellers because I still used the original table, Sales table.
+Then, I used HAVING to limit to the highest total price from subquery and selected the column I needed, seller_id.
+
+```
+WITH Total_Price AS(
+    SELECT SUM(price) AS TotalPrice
+    FROM Sales
+    GROUP BY seller_id
+    ORDER BY TotalPrice DESC
+)
+
+SELECT seller_id
+FROM Sales
+GROUP BY seller_id
+HAVING SUM(price) = (
+    SELECT MAX(TotalPrice)
+    FROM Total_Price
+    LIMIT 1
+)
+```
+
+**Improvement:
+I used two subquerries to complete the request in total, but we can only use one subquery.
