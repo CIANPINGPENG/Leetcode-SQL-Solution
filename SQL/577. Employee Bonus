@@ -1,0 +1,19 @@
+**Intuition:
+The intuition is to retrieve data where the bonus is either missing (NULL) or less than 1000.
+
+**Algorithm:
+1. Select name from the Employee table and bonus from the Bonus table.
+2. Use LEFT JOIN to combine the Employee and Bonus tables based on the employee ID.
+3. Filter if an employee doesn't have a bonus entry or bonus is less than 1000 in the Bonus table
+
+```
+SELECT 
+    A.name, 
+    B.bonus
+FROM Employee A
+LEFT JOIN Bonus B
+    ON A.empId = B.empId
+WHERE 
+    B.bonus IS NULL OR 
+    B.bonus < 1000
+```
